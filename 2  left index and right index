@@ -1,0 +1,23 @@
+import java.util.*;
+class d{
+public static void main(String args[]){
+Scanner s=new Scanner(System.in);
+System.out.print("enter array size");
+int n=s.nextInt();
+int a[]=new int[n];
+System.out.print("enter left index");
+int left=s.nextInt();
+System.out.print("enter right index");
+int right=s.nextInt();
+System.out.print("enter array elements:");
+for(int i=0;i<n;i++)
+{
+a[i]=s.nextInt();
+}
+int sum=0;
+for(int j=left;j<=right;j++)
+{
+sum=sum+a[j];
+}
+System.out.print("sum is"+sum);
+}}
