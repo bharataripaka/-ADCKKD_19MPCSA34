@@ -1,0 +1,35 @@
+import java.util.*;
+class d{
+public static void main(String args[]){
+Scanner s=new Scanner(System.in);
+int n=s.nextInt();
+int a[]=new int[n];
+int temp[]=new int[n];
+for(int i=0;i<n;i++)
+{
+a[i]=s.nextInt();
+}
+temp[0]=a[0];
+int y=1;
+for(int j=1;j<n;j++)
+{
+int flag=0;
+for(int k=0;k<temp.length;k++)
+{
+if(temp[k]==a[j])
+{
+flag=1;
+break;
+}
+}
+if(flag==0)
+{
+temp[y]=a[j];
+y++;
+}
+}
+for(int f=0;f<y;f++)
+{
+System.out.println(temp[f]);
+}
+}}
